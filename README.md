@@ -13,6 +13,5 @@ Here we point out one major drawback of current model [1], which is that the mod
 The problem of how to maintain non-local and non-stationary textural structure has been studied before in the static texture synthesis domain [3][4]. Generally speaking, there are some modifications to the original Gram loss to capture long-range correlation.
 Let I denote the target texture. Extracting the Gram matrix involves running an image I forward through a neural network, which yields the deep features. We denote the nth feature channel of the lth layer by fl,n . Using the Gram matrix, between n and the n’ feature channel
 
-<p align="center">
-  ![image](https://user-images.githubusercontent.com/35282488/56315962-fbe3f300-610d-11e9-974a-aeae6bb0755a.png)
-</p>
+![image](https://user-images.githubusercontent.com/35282488/56315962-fbe3f300-610d-11e9-974a-aeae6bb0755a.png)>
+
