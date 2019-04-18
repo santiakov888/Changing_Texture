@@ -1,6 +1,6 @@
-# Changing Texture: : Integrating Long-range Correlation into Dynamic Texture Synthesis
+# Changing Texture: Integrating Long-range Correlation into Dynamic Texture Synthesis
 
-## Team members: Kaitai Zhang, Bin Wang, Santiago Carvajal, Jiajun Xu, Jingbo Sun**
+## Team members: Kaitai Zhang, Bin Wang, Santiago Carvajal, Jiajun Xu, Jingbo Sun
 
 ## Introduction:
 
@@ -42,4 +42,6 @@ which shift pixel i vertically and pixel j pixel horizontally, then applying a p
 
 Our approach was to modify Tesfaldet et. al. model [1] by substituting R_(i,j)^(l,n) into the loss function instead of the original Gram loss used in their model. This allowed us to better capture spatio-temporal features of the synthesized dynamic texture, allowing a better rendering of textures such as those shown in Figure 2. 
 
+## Experimentation:
 
+We experimented with (two*) different loss functions to incorporate spatio-temporal features. Figure 2 below shows the results from our experimentation. The leftmost video shows the original video, the next video is the rendered video by [1], next video shows result from first loss, and last video shows video from second loss.
