@@ -2,6 +2,12 @@
 
 ## Team members: Kaitai Zhang, Bin Wang, Santiago Carvajal, Jiajun Xu, Jingbo Sun
 
+## Summary
+
+Dynamic texture synthesis aims to synthesize dynamic texture video given a short video of target dynamic texture. It has been a problem of interest in human perception, computer vision, and pattern recognition for the past several years. Several models [1][2] have been published recently which employ deep learning techniques targeting on the dynamic texture problem. However, these models fail on textures that have spatial consistencies. We have identified that this shortcoming is due to the Gram Loss used in their models. Thus, we have attempted to solve this problem by incorporating horizontal, vertical, and rotational loss terms to the Gram Loss used in [1], forcing the neural network to account for spatial consistencies.
+
+Our results are shown below in Figure 1. As seen in this figure it we are able to produce significantly better results with the addition of the extra terms to the Gram Loss., with the loss with all the terms performing the best, followed by the results with only horizontal and vertical terms being added. However, the price for achieving better results in this case
+
 ## Introduction:
 
 Dynamic texture synthesis aims to synthesize dynamic texture video given a short video of target dynamic texture. It has been a problem of interest in human perception, computer vision, and pattern recognition for the past several years. Several models [1][2] have been published recently which employ deep learning techniques targeting on the dynamic texture problem.
