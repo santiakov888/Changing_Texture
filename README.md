@@ -6,7 +6,7 @@
 
 Dynamic texture synthesis aims to synthesize dynamic texture video given a short video of target dynamic texture. It has been a problem of interest in human perception, computer vision, and pattern recognition for the past several years. Several models [1][2] have been published recently which employ deep learning techniques targeting on the dynamic texture problem. However, these models fail on textures that have spatial consistencies. We have identified that this shortcoming is due to the Gram Loss used in their models. Thus, we have attempted to solve this problem by incorporating horizontal, vertical, and rotational loss terms to the Gram Loss used in [1], forcing the neural network to account for spatial consistencies.
 
-Our results are shown below in Figure 1. As seen in this figure it we are able to produce significantly better results with the addition of the extra terms to the Gram Loss., with the loss with all the terms performing the best, followed by the results with only horizontal and vertical terms being added. However, the price for achieving better results in this case
+Our results are shown below in Figure 1. As seen in this figure it we are able to produce significantly better results with the addition of the extra terms to the Gram Loss., with the loss with all the terms performing the best, followed by the results with only horizontal and vertical terms being added. However, the price for achieving better results in this case are that the number of parameters that need to be inputed are greater, and each parameter needs to be finetuned to achieve optimal results. 
 
 ## Introduction:
 
@@ -54,4 +54,4 @@ Our approach was to modify Tesfaldet et. al. model [1] by substituting R_(i,j)^(
 
 ## Experimentation:
 
-We experimented with (two*) different loss functions to incorporate spatio-temporal features. Figure 2 below shows the results from our experimentation. The leftmost video shows the original video, the next video is the rendered video by [1], next video shows result from first loss, and last video shows video from second loss.
+We experimented with two different loss functions to incorporate spatio-temporal features. The first loss function only incorporates horizontal and vertical spatial consintecies to the Gram Loss function. The second loss function adds rotational loss terms to the our first loss function. Figure 2 below shows the results from our experimentation. The leftmost video shows the original video, the next video is the rendered video by [1], next video shows result from first loss, and last video shows video from second loss.
