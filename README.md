@@ -44,9 +44,6 @@ where q and m are the indices running across the Q × M feature map.
 
 Motivated by the fact that the Gram matrix only makes use of inter-feature correlations whereas image structures are represented by the intra-feature correlations. The deep correlation is defined by the following equation:
 
-<img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" />
-
-
 <p align="center">
   <img src="https://user-images.githubusercontent.com/35282488/56317466-af9ab200-6111-11e9-84b4-7883ac388e53.png">
  </p>
